@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+	
+  <ItemGroup>
+	<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+	<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+   </ItemGroup>
+
+	
+  <ItemGroup>
+    <ProjectReference Include="..\Shift.Domain.Core\Shift.Domain.Core.csproj" />
+    <ProjectReference Include="..\Shift.Infra.CrossCutting.AspNetFilters\Shift.Infra.CrossCutting.AspNetFilters.csproj" />
+    <ProjectReference Include="..\Shift.Infra.CrossCutting.Identity\Shift.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\Shift.Infra.Data\Shift.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

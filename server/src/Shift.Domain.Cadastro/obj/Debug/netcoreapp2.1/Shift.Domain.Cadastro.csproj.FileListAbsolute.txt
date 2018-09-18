@@ -1,0 +1,12 @@
+D:\dev\shift\server\src\Shift.Domain.Cadastro\bin\Debug\netcoreapp2.1\Shift.Domain.Cadastro.deps.json
+D:\dev\shift\server\src\Shift.Domain.Cadastro\bin\Debug\netcoreapp2.1\Shift.Domain.Cadastro.dll
+D:\dev\shift\server\src\Shift.Domain.Cadastro\bin\Debug\netcoreapp2.1\Shift.Domain.Cadastro.pdb
+D:\dev\shift\server\src\Shift.Domain.Cadastro\bin\Debug\netcoreapp2.1\Shift.Domain.Core.dll
+D:\dev\shift\server\src\Shift.Domain.Cadastro\bin\Debug\netcoreapp2.1\Shift.Domain.Core.pdb
+D:\dev\shift\server\src\Shift.Domain.Cadastro\obj\Debug\netcoreapp2.1\Shift.Domain.Cadastro.csprojAssemblyReference.cache
+D:\dev\shift\server\src\Shift.Domain.Cadastro\obj\Debug\netcoreapp2.1\Shift.Domain.Cadastro.csproj.CoreCompileInputs.cache
+D:\dev\shift\server\src\Shift.Domain.Cadastro\obj\Debug\netcoreapp2.1\Shift.Domain.Cadastro.AssemblyInfoInputs.cache
+D:\dev\shift\server\src\Shift.Domain.Cadastro\obj\Debug\netcoreapp2.1\Shift.Domain.Cadastro.AssemblyInfo.cs
+D:\dev\shift\server\src\Shift.Domain.Cadastro\obj\Debug\netcoreapp2.1\Shift.Domain.Cadastro.csproj.CopyComplete
+D:\dev\shift\server\src\Shift.Domain.Cadastro\obj\Debug\netcoreapp2.1\Shift.Domain.Cadastro.dll
+D:\dev\shift\server\src\Shift.Domain.Cadastro\obj\Debug\netcoreapp2.1\Shift.Domain.Cadastro.pdb

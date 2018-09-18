@@ -1,0 +1,16 @@
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Infra.Data.deps.json
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Infra.Data.runtimeconfig.json
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Infra.Data.runtimeconfig.dev.json
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Infra.Data.dll
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Infra.Data.pdb
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Domain.Cadastro.dll
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Domain.Core.dll
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Domain.Cadastro.pdb
+D:\dev\shift\server\src\Shift.Infra.Data\bin\Debug\netcoreapp2.1\Shift.Domain.Core.pdb
+D:\dev\shift\server\src\Shift.Infra.Data\obj\Debug\netcoreapp2.1\Shift.Infra.Data.csprojAssemblyReference.cache
+D:\dev\shift\server\src\Shift.Infra.Data\obj\Debug\netcoreapp2.1\Shift.Infra.Data.csproj.CoreCompileInputs.cache
+D:\dev\shift\server\src\Shift.Infra.Data\obj\Debug\netcoreapp2.1\Shift.Infra.Data.AssemblyInfoInputs.cache
+D:\dev\shift\server\src\Shift.Infra.Data\obj\Debug\netcoreapp2.1\Shift.Infra.Data.AssemblyInfo.cs
+D:\dev\shift\server\src\Shift.Infra.Data\obj\Debug\netcoreapp2.1\Shift.Infra.Data.csproj.CopyComplete
+D:\dev\shift\server\src\Shift.Infra.Data\obj\Debug\netcoreapp2.1\Shift.Infra.Data.dll
+D:\dev\shift\server\src\Shift.Infra.Data\obj\Debug\netcoreapp2.1\Shift.Infra.Data.pdb

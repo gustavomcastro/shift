@@ -1,0 +1,9 @@
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.deps.json
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.dll
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.pdb
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.csprojAssemblyReference.cache
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.csproj.CoreCompileInputs.cache
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.AssemblyInfoInputs.cache
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.AssemblyInfo.cs
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.dll
+D:\dev\shift\server\src\Shift.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\Shift.Infra.CrossCutting.AspNetFilters.pdb
