@@ -1,0 +1,87 @@
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12 ui-lg-12">
+    <div class="card card-w-title">
+      <h1>Empresas</h1>
+
+      <form autocomplete="off" (ngSubmit)="listarEmpresas()">
+        <div class="ui-g form-group">
+          <div class="ui-g-12 ui-md-10">
+            <input type="text" name="nome" [(ngModel)]="filtro.nome" pInputText placeholder="Digite sua pesquisa" class="animated slideInDown">
+          </div>
+          <div class="ui-g-12 ui-md-2">
+            <button pButton type="submit" label="Pesquisar" class="animated slideInDown"></button>
+          </div>
+        </div>
+      </form>
+
+      <!--NOVO-->
+      <div class="ui-g form-group">
+        <div class="ui-g-12 ui-md-1">
+          <a pButton label="Novo" icon="fa fa-plus" [routerLink]="['/cadastro/nova-empresa']" class="animated slideInDown"
+            *ngIf="authService.temPermissao('Empresa','Gravar')"></a>
+        </div>
+      </div>
+      <!--NOVO-->
+
+      <!--VALIDACOES-->
+      <div class="ui-g form-group">
+        <div class="ui-g-12 ui-md-12 ui-fluid">
+          <div class="ui-message ui-message-error" *ngIf="errors.length > 0">
+            <h3 id="msgRetorno">Opa! Alguma coisa não deu certo :(</h3>
+            <ul>
+              <li *ngFor="let error of errors">{{ error.message }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--VALIDACOES-->
+
+      <!--TABELA-->
+      <p-table [value]="empresas" selectionMode="single" paginatorPosition="bottom" [responsive]="true" [paginator]="true"
+        [rows]="filtro.qtdeItensPorPagina" [lazy]="true" [totalRecords]="totalRegistros" (onLazyLoad)="aoMudarPagina($event)"
+        emptyMessage="Nenhum registro localizado" #tabela>
+
+
+        <ng-template pTemplate="header">
+          <tr>
+            <th class="col-header"> Codigo </th>
+            <th> Empresa </th>
+            <th class="centralizar-texto"> CNPJ </th>
+            <th class="col-header"> Status</th>
+            <th class="col-header"> Ações </th>
+          </tr>
+        </ng-template>
+
+        <ng-template pTemplate="body" let-empresa>
+          <tr>
+            <td class="col-header"> {{ empresa.codEmpresa }} </td>
+            <td> {{ empresa.nome }} </td>
+            <td class="centralizar-texto"> {{ empresa.cnpj }} </td>
+            <td class="col-header"> {{ empresa.descSituacao }} </td>
+
+
+            <td class="col-acoes">
+
+              <button class="botoes-acoes" pButton icon="fa fa-pencil" pTooltip="Editar" tooltipPosition="top"
+                [routerLink]="['/cadastro/editar-empresa', empresa.codEmpresa]" *ngIf="authService.temPermissao('Empresa','Gravar')"></button>
+
+              &nbsp;
+
+              <button pButton icon="fa fa-trash" pTooltip="Excluir" tooltipPosition="top" (click)="confirmarExclusao(empresa)"
+                *ngIf="authService.temPermissao('Empresa','Gravar')"></button>
+
+              &nbsp;
+
+              <button pButton icon="fa fa-columns" pTooltip="Detalhar" tooltipPosition="top" [routerLink]="['/cadastro/detalhes-empresa', empresa.codEmpresa]"></button>
+
+
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+      <!--TABELA-->
+
+
+    </div>
+  </div>
+</div>

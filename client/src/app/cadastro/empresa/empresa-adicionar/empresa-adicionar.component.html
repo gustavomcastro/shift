@@ -1,0 +1,71 @@
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12 ui-lg-12">
+    <div class="card card-w-title">
+      <h1>Nova Empresa</h1>
+      <!--novalidate: para desabilitar a validacao do form-->
+      <form novalidate autocomplete="off" (ngSubmit)="salvar()" [formGroup]="formulario">
+
+        <div class="ui-g form-group">
+
+          <!--VALIDACOES-->
+          <div class="ui-g-12 ui-md-12 ui-fluid">
+            <div class="ui-message ui-message-error" *ngIf="errors.length > 0">
+              <h3 id="msgRetorno">Opa! Alguma coisa não deu certo:</h3>
+              <ul>
+                <li *ngFor="let error of errors">{{ error.message }}</li>
+              </ul>
+            </div>
+          </div>
+          <!--VALIDACOES-->
+
+          <!--CODIGO-->
+          <div class="ui-g-12 ui-md-1 ui-fluid">
+            <label>Código</label>
+            <p-inputMask mask="99aa" name="codigo" formControlName="codEmpresa"></p-inputMask>
+
+            <app-mensagem [control]="formulario.get('codEmpresa')" error="required" text="Informe código"></app-mensagem>
+
+            <app-mensagem [control]="formulario.get('codEmpresa')" error="minlength" text="Mínimo {{ formulario.get('codEmpresa').errors?.minlength?.requiredLength }} caracteres"></app-mensagem>
+          </div>
+          <!--CODIGO-->
+
+          <!--CNPJ-->
+          <div class="ui-g-12 ui-md-4 ui-fluid">
+            <label>CNPJ</label>
+            <p-inputMask mask="99.999.999-9999-99" name="cnpj" formControlName="cnpj"></p-inputMask>
+
+            <app-mensagem [control]="formulario.get('cnpj')" error="required" text="Informe o cnpj"></app-mensagem>
+
+            <app-mensagem [control]="formulario.get('cnpj')" error="minlength" text="Mínimo {{ formulario.get('cnpj').errors?.minlength?.requiredLength }} caracteres"></app-mensagem>
+          </div>
+          <!--CNPJ-->
+
+          <!--NOME-->
+          <div class="ui-g-12 ui-md-12 ui-fluid">
+            <label>Nome</label>
+            <input pInputText type="text" name="nome" formControlName="nome">
+
+            <app-mensagem [control]="formulario.get('nome')" error="required" text="Informe um nome"></app-mensagem>
+
+            <app-mensagem [control]="formulario.get('nome')" error="minlength" text="Mínimo {{ formulario.get('nome').errors?.minlength?.requiredLength }} caracteres"></app-mensagem>
+
+            <app-mensagem [control]="formulario.get('nome')" error="maxlength" text="Máximo {{ formulario.get('nome').errors?.maxlength?.requiredLength }} caracteres"></app-mensagem>
+
+          </div>
+          <!--NOME-->
+
+          <!--NAVEGACAO-->
+          <div class="ui-g-12 ui-md-2 ui-fluid">
+            <button class="botao" pButton type="submit" label="Salvar" [disabled]="formulario.invalid"></button>
+          </div>
+
+          <div class="ui-g-12 ui-md-6 ui-fluid">
+            <a routerLink="/cadastro/empresas">Voltar para a pesquisa</a>
+          </div>
+          <!--NAVEGACAO-->
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<form novalidate autocomplete="off" (ngSubmit)="login()" [formGroup]="formulario">
+  <div class="card  ui-fluid login">
+    <div class="login-panel-content ">
+      <div class="ui-g ">
+        <div class="ui-g-2" style="text-align:left;">
+          <img class="animated slideInDown" src="../assets/layout/images/login/icon-login.svg" />
+        </div>
+        <div class="ui-g-10" style="text-align:right;">
+          <h2 class="welcome-text animated slideInDown">Bem Vindo ao Shift</h2>
+          <span class="guest-sign-in animated slideInUp">Uma solucão SESI/SENAI - MT</span>
+        </div>
+
+        <!--Usuario-->
+        <div class="ui-g-12" style="text-align:left;">
+          <label class="login-label">Usuário</label>
+          <input pInputText type="text" name="usuario" placeholder="Usuário (requerido)" formControlName="username"
+            class="animated slideInLeft" />
+
+          <app-mensagem [control]="formulario.get('username')" error="required" text="Informe o nome do usuário"></app-mensagem>
+
+          <app-mensagem [control]="formulario.get('username')" error="minlength" text="Mínimo {{ formulario.get('username').errors?.minlength?.requiredLength }} caracteres"></app-mensagem>
+
+          <app-mensagem [control]="formulario.get('username')" error="maxlength" text="Máximo {{ formulario.get('username').errors?.maxlength?.requiredLength }} caracteres"></app-mensagem>
+        </div>
+        <!--Usuario-->
+
+
+
+        <!--Senha-->
+        <div class="ui-g-12" style="text-align:left;">
+          <label class="login-label">Senha</label>
+          <input pInputText type="password" name="usuario" placeholder="Senha (requerida)" formControlName="password" class="animated slideInRight" />
+
+          <app-mensagem [control]="formulario.get('password')" error="required" text="Informe a senha"></app-mensagem>
+
+          <app-mensagem [control]="formulario.get('password')" error="minlength" text="Mínimo {{ formulario.get('password').errors?.minlength?.requiredLength }} caracteres"></app-mensagem>
+
+          <app-mensagem [control]="formulario.get('password')" error="maxlength" text="Máximo {{ formulario.get('password').errors?.maxlength?.requiredLength }} caracteres"></app-mensagem>
+        </div>
+        <!--Senha-->
+
+
+
+        <div class="ui-g-12">
+          <button pButton type="submit" label="Entrar" [disabled]="!formulario.valid"></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</form>

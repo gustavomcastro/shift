@@ -1,0 +1,48 @@
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12 ui-lg-12">
+    <div class="card card-w-title">
+      <h1>Detalhes Empresa</h1>
+      <div class="ui-g form-group">
+
+        <!--CODIGO-->
+        <div class="ui-g-12 ui-md-1 ui-fluid">
+          <label>Código</label>
+          <br>
+          <b>{{ empresaViewModel?.codEmpresa }}</b>
+        </div>
+        <!--CODIGO-->
+
+        <!--CNPJ-->
+        <div class="ui-g-12 ui-md-4 ui-fluid">
+          <label>CNPJ</label>
+          <br>
+          <b>{{ empresaViewModel?.cnpj }}</b>
+        </div>
+        <!--CNPJ-->
+
+        <!--NOME-->
+        <div class="ui-g-12 ui-md-10 ui-fluid">
+          <label>Nome</label>
+          <br>
+          <b>{{ empresaViewModel?.nome }}</b>
+        </div>
+        <!--NOME-->
+
+        <!--SITUACAO-->
+        <div class="ui-g-12 ui-md-2 ui-fluid">
+          <label>Situação</label>
+          <br>
+          <b>{{ empresaViewModel?.descSituacao }}</b>
+        </div>
+        <!--SITUACAO-->
+
+        <!--NAVEGACAO-->
+        <div class="ui-g-12 ui-md-6 ui-fluid">
+          <a routerLink="/cadastro/empresas">Voltar para a pesquisa</a>
+        </div>
+        <!--NAVEGACAO-->
+
+      </div>
+    </div>
+  </div>
+</div>

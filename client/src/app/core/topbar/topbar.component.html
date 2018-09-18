@@ -1,0 +1,12 @@
+<div class="topbar clearfix">
+  <div class="topbar-left">
+      <img src="assets/layout/images/logo-shift.png" class="topbar-logo" />
+  </div>
+
+  <div class="topbar-right">
+      <a id="menu-button" href="#" (click)="app.onMenuButtonClick($event)"
+         [ngClass]="{'menu-button-rotate': app.rotateMenuButton}">
+          <i class="fa fa-angle-left"></i>
+      </a>
+  </div>
+</div>
